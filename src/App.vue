@@ -26,3 +26,5 @@ nav {
   }
 }
 </style>
+
+<style src="bootstrap-icons/font/bootstrap-icons.css"></style>
