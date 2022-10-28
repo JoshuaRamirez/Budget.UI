@@ -1,5 +1,5 @@
-import { ApplicationState } from '@/Store/States/ApplicationState';
 import { GetDataGridSortButton } from '@/Store/Getters/GetDataGridSortButton';
+import { ApplicationState } from '@/Store/ApplicationStore';
 
 export interface ToggleDataGridSortButtonIndicatorPayload {
   DataGridId : string,

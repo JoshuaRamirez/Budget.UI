@@ -1,14 +1,12 @@
-<template v-if="dataGridId">
-  <DataGrid :DataGridId="dataGridId" :DataModel="dataModel"/>
+<template v-if="controller.ViewModel.DataGridId">
+  <DataGrid :DataGridId="controller.ViewModel.DataGridId" :DataModel="controller.DataModel"/>
 </template>
 
 <script lang="ts" setup>
 import DataGrid from '@/Components/Shared/DataGrid/DataGrid.vue';
-import SampleUserData from '@/Api/SampleAccountSummaryData';
-import { NextId } from '@/Core/NextId';
+import { AccountSummaryTableController } from '@/Components/AccountSummaryTable/AccountSummaryTable.Controller';
 
-const dataGridId = NextId();
-const dataModel = SampleUserData;
+const controller = new AccountSummaryTableController();
 </script>
 
 <style scoped>

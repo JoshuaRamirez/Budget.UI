@@ -6,18 +6,22 @@ import { DataGridDataModel } from '@/Components/Shared/DataGrid/Models/DataGrid.
 import { DataGridColumn } from '@/Components/Shared/DataGrid/Shapes/DataGrid.Column';
 import { DataGridRow } from '@/Components/Shared/DataGrid/Shapes/DataGrid.Row';
 
+export interface SortButton {
+  Id : string,
+  StyleModel : DataGridSortButtonStyleModel
+  ViewModel : DataGridSortButtonViewModel
+}
+
+export interface DataGrid {
+  Id : string
+  SortButtons : SortButton[]
+  DataModel? : DataGridDataModel<DataGridColumn, DataGridRow>
+  ViewModel? : DataGridViewModel
+  StyleModel? : DataGridStyleModel
+}
+
 export interface DataGridsState {
-  DataGrids : {
-    Id : string
-    SortButtons : {
-      Id : string,
-      StyleModel : DataGridSortButtonStyleModel,
-      ViewModel : DataGridSortButtonViewModel
-    }[],
-    DataModel? : DataGridDataModel<DataGridColumn, DataGridRow>
-    ViewModel? : DataGridViewModel
-    StyleModel? : DataGridStyleModel
-  }[]
+  DataGrids : DataGrid[]
 }
 
 export function CreateDefaultDataGridsState () : DataGridsState {

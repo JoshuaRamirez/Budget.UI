@@ -3,9 +3,9 @@ import App from './App.vue';
 import './registerServiceWorker';
 import ApplicationRouter from './Router/ApplicationRouterFactory';
 import 'bootstrap/dist/css/bootstrap.css';
-import { ApplicationStoreFactory } from '@/Store/ApplicationStoreFactory';
+import ApplicationStore from '@/Store/ApplicationStore';
 
 createApp(App)
-  .use(ApplicationStoreFactory)
+  .use(ApplicationStore)
   .use(ApplicationRouter)
   .mount('#app');

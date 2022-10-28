@@ -1,12 +1,12 @@
 import { SortDirection } from '@/Core/SortDirection';
 
 export class DataGridSortButtonViewModel {
-  public ColumnId : string
+  public Id : string
   public CurrentSortDirection : SortDirection | null
   public IsEnabled : boolean
 
-  constructor (columnId : string) {
-    this.ColumnId = columnId;
+  constructor (id : string) {
+    this.Id = id;
     this.CurrentSortDirection = null;
     this.IsEnabled = false;
   }

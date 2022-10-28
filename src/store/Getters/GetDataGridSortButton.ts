@@ -1,4 +1,4 @@
-import { ApplicationState } from '@/Store/States/ApplicationState';
+import { ApplicationState } from '@/Store/ApplicationStore';
 
 export const GetDataGridSortButton = (state : ApplicationState) => (dataGridId : string, dataGridSortButtonId : string) => {
   const dataGrid = state.DataGridsState.DataGrids.find(x => x?.Id === dataGridId);

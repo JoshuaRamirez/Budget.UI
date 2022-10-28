@@ -1,7 +1,7 @@
-import { ApplicationState } from '@/Store/States/ApplicationState';
 import { DataGridSortButtonViewModel } from '@/Components/Shared/DataGridSortButton/Models/DataGridSortButton.ViewModel';
 import { DataGridSortButtonStyleModel } from '@/Components/Shared/DataGridSortButton/Models/DataGridSortButton.StyleModel';
 import { GetDataGrid } from '@/Store/Getters/GetDataGrid';
+import { ApplicationState } from '@/Store/ApplicationStore';
 
 export interface InitializeDataGridSortButtonPayload {
   DataGridId : string

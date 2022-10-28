@@ -1,9 +1,9 @@
 import { MutationTypes } from '@/Store/Core/MutationTypes';
 import { ActionContext } from 'vuex';
-import { ApplicationState } from '@/Store/States/ApplicationState';
 import { DataGridSortButtonStyleModel } from '@/Components/Shared/DataGridSortButton/Models/DataGridSortButton.StyleModel';
 import { DataGridSortButtonViewModel } from '@/Components/Shared/DataGridSortButton/Models/DataGridSortButton.ViewModel';
 import { InitializeDataGridSortButtonPayload } from '@/Store/Mutations/InitializeDataGridSortButton';
+import { ApplicationState } from '@/Store/ApplicationStore';
 
 export interface DataGridSortButtonCreatedPayload {
   DataGridId : string

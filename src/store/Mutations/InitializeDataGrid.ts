@@ -1,9 +1,9 @@
-import { ApplicationState } from '@/Store/States/ApplicationState';
 import { DataGridStyleModel } from '@/Components/Shared/DataGrid/Models/DataGrid.StyleModel';
 import { DataGridViewModel } from '@/Components/Shared/DataGrid/Models/DataGrid.ViewModel';
 import { DataGridDataModel } from '@/Components/Shared/DataGrid/Models/DataGrid.DataModel';
 import { DataGridColumn } from '@/Components/Shared/DataGrid/Shapes/DataGrid.Column';
 import { DataGridRow } from '@/Components/Shared/DataGrid/Shapes/DataGrid.Row';
+import { ApplicationState } from '@/Store/ApplicationStore';
 
 export interface InitializeDataGridPayload {
   DataGridId : string

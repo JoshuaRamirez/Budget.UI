@@ -1,6 +1,6 @@
 import { MutationTypes } from '@/Store/Core/MutationTypes';
 import { ActionContext } from 'vuex';
-import { ApplicationState } from '@/Store/States/ApplicationState';
+import { ApplicationState } from '@/Store/ApplicationStore';
 
 export interface DataGridSortButtonClickedPayload {
   DataGridId : string
