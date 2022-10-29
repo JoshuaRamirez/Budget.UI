@@ -2,7 +2,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th v-for="column in controller.DataModel.Columns" :key="column.ColumnId" scope="col">
+        <th v-for="column in controller.DataModel.Columns" :key="column.ColumnId" class="columnHeader" scope="col">
           {{ column.ColumnName }}
           <DataGridSortButton :DataGridId="controller.ViewModel.DataGridId" :DataGridSortButtonId="column.ColumnId"/>
         </th>
@@ -36,3 +36,12 @@ const props = defineProps<DataGridProps>();
 const store = useStore();
 const controller = new DataGridController(props, store);
 </script>
+
+<style>
+.columnHeader {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+</style>
