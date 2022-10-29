@@ -4,7 +4,7 @@
       <tr>
         <th v-for="column in controller.DataModel.Columns" :key="column.ColumnId" scope="col">
           {{ column.ColumnName }}
-          <DataGridSortButton :DataGridId="controller.ViewModel.DataGridId" :DataGridSortButtonId="controller.ViewModel.NextId()"/>
+          <DataGridSortButton :DataGridId="controller.ViewModel.DataGridId" :DataGridSortButtonId="column.ColumnId"/>
         </th>
       </tr>
     </thead>

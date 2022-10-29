@@ -1,5 +1,6 @@
 export enum MutationTypes {
   InitializeDataGrid = 'InitializeDataGrid',
   InitializeDataGridSortButton = 'InitializeDataGridSortButton',
-  ToggleDataGridSortButtonIndicator = 'ToggleDataGridSortButtonIndicator'
+  ToggleDataGridSortButtonIndicator = 'ToggleDataGridSortButtonIndicator',
+  SortDataGrid = 'SortDataGrid'
 }

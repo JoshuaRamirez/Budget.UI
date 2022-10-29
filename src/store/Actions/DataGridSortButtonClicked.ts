@@ -3,10 +3,11 @@ import { ActionContext } from 'vuex';
 import { ApplicationState } from '@/Store/ApplicationStore';
 
 export interface DataGridSortButtonClickedPayload {
-  DataGridId : string
-  DataGridSortButtonId : string
+  DataGridId : string;
+  DataGridSortButtonId : string;
 }
 
 export const DataGridSortButtonClicked = (actionContext : ActionContext<ApplicationState, ApplicationState>, payload : DataGridSortButtonClickedPayload) => {
   actionContext.commit(MutationTypes.ToggleDataGridSortButtonIndicator, payload);
+  actionContext.commit(MutationTypes.SortDataGrid, payload);
 };

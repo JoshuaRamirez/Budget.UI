@@ -8,6 +8,7 @@ import { ToggleDataGridSortButtonIndicator } from '@/Store/Mutations/ToggleDataG
 import { CreateDefaultDataGridsState } from '@/Store/States/DataGridsState';
 import { GetDataGridSortButton } from '@/Store/Getters/GetDataGridSortButton';
 import { GetDataGrid } from '@/Store/Getters/GetDataGrid';
+import { SortDataGrid } from '@/Store/Mutations/SortDataGrid';
 
 export class ApplicationState {
   public DataGridsState = CreateDefaultDataGridsState()
@@ -22,6 +23,7 @@ export class ApplicationMutations {
   public InitializeDataGrid = InitializeDataGrid
   public InitializeDataGridSortButton = InitializeDataGridSortButton
   public ToggleDataGridSortButtonIndicator = ToggleDataGridSortButtonIndicator
+  public SortDataGrid = SortDataGrid
 }
 
 export class ApplicationActions {

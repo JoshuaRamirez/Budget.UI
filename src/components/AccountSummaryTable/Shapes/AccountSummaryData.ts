@@ -2,12 +2,5 @@ import { AccountSummaryDataColumn } from '@/Components/AccountSummaryTable/Shape
 import { AccountSummaryDataRow } from '@/Components/AccountSummaryTable/Shapes/AccountSummaryDataRow';
 import { DataGridDataModel } from '@/Components/Shared/DataGrid/Models/DataGrid.DataModel';
 
-export class AccountSummaryData implements DataGridDataModel<AccountSummaryDataColumn, AccountSummaryDataRow> {
-  public Columns : Array<AccountSummaryDataColumn>
-  public Rows : Array<AccountSummaryDataRow>
-
-  constructor () {
-    this.Columns = new Array<AccountSummaryDataColumn>();
-    this.Rows = new Array<AccountSummaryDataRow>();
-  }
+export class AccountSummaryData extends DataGridDataModel<AccountSummaryDataColumn, AccountSummaryDataRow> {
 }

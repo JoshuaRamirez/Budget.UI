@@ -15,9 +15,9 @@ export interface SortButton {
 export interface DataGrid {
   Id : string
   SortButtons : SortButton[]
-  DataModel? : DataGridDataModel<DataGridColumn, DataGridRow>
-  ViewModel? : DataGridViewModel
-  StyleModel? : DataGridStyleModel
+  DataModel : DataGridDataModel<DataGridColumn, DataGridRow>
+  ViewModel : DataGridViewModel
+  StyleModel : DataGridStyleModel
 }
 
 export interface DataGridsState {
